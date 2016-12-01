@@ -1,4 +1,6 @@
 import {Component} from '@angular/core';
+import { ArtistService } from '/app/artist.service';
+import 'rxjs/add/operator/toPromise';
 
 @Component({
 	selector: 'artist-head',
@@ -6,5 +8,18 @@ import {Component} from '@angular/core';
 })
 
 export class ArtistHeadComponent{
-	
+     artist: Artist[];
+     mode = 'Observable';	
+
+
+
+getArtist(){
+	  this.artistService.getArtist()
+	                     .subscribe(
+                          artist => this.artist,
+                          error => this.errorMessage);
+	                     ) 
 }
+}
+
+

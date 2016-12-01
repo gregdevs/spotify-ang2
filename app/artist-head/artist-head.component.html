@@ -1,25 +1,28 @@
-      <div class="artist-pillholder">
-        <div class="artist-pillwrapper">
-          <div class="artist-pill-inner activeartist"   data-artistid="" data-name="">
-            <div class="artist-pill" data-audio="" >
-              <div class="imgwrapper">
-                <img class="artist-image" ng-src="" />
-              </div>
-              <div class="related-controls-wrapper artistpill-wrapper">
-                <div class="control-holder play-ctrl">
-                  <span class="glyphicon glyphicon-play"></span>
-                </div>
-                <div class="control-holder pause-ctrl">
-                  <span class="glyphicon glyphicon-pause"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pill-grabber"><span class="glyphicon glyphicon-option-vertical"></span></div>
+<div class="artist-pillholder">
+
+  <div class="artist-pillwrapper">
+    <div class="artist-pill-inner activeartist"   data-artistid="" data-name="">
+      <div class="artist-pill" data-audio="" >
+        <div class="imgwrapper">
+          <img class="artist-image"  />
         </div>
-       <div class="artist-info">
-         <span>Artist</span>
-         <h5>ArtistName</h5>  
-          <div id="waveform"></div>      
-       </div>        
+        <div class="related-controls-wrapper artistpill-wrapper">
+          <div class="control-holder play-ctrl">
+            <span class="glyphicon glyphicon-play"></span>
+          </div>
+          <div class="control-holder pause-ctrl">
+            <span class="glyphicon glyphicon-pause"></span>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="pill-grabber"><span class="glyphicon glyphicon-option-vertical"></span></div>
+  </div>
+
+ <div class="artist-info">
+   <span>{{artist}}</span>
+   <h5>ArtistName</h5>  
+   <div id="waveform"></div>      
+ </div>
+         
+</div>
